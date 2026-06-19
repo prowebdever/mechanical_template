@@ -19,7 +19,7 @@ export default function App() {
       </main>
       <footer className="border-t border-steel-800/60">
         <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-steel-400">
-          © {new Date().getFullYear()} {profile.name}. Built with React + Tailwind.
+          © {new Date().getFullYear()} {profile.name}. All rights reserved.
         </div>
       </footer>
     </div>
