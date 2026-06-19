@@ -1,0 +1,57 @@
+// ─────────────────────────────────────────────────────────────
+//  EDIT THIS FILE to personalize your portfolio.
+//  Images: drop files into the `public/images/` folder and
+//  reference them as "/images/your-file.jpg".
+// ─────────────────────────────────────────────────────────────
+
+export const profile = {
+  name: "Your Name",
+  title: "Mechanical Engineer",
+  tagline: "Designing, analyzing, and building reliable mechanical systems.",
+  bio: "Short bio goes here. Mention your specialties (e.g. CAD, FEA, manufacturing), years of experience, and what kind of problems you love to solve.",
+  location: "City, Country",
+  email: "you@example.com",
+  phone: "",
+  linkedin: "", // e.g. "https://linkedin.com/in/yourname"
+  github: "",   // optional
+  resumeUrl: "", // optional: link to a PDF in /public
+}
+
+export const skills = [
+  "SolidWorks",
+  "AutoCAD",
+  "FEA / Simulation",
+  "GD&T",
+  "CNC Machining",
+  "3D Printing",
+  "Fusion 360",
+  "MATLAB",
+]
+
+// Each project can have one or more images.
+export const projects = [
+  {
+    id: 1,
+    title: "Project One",
+    description:
+      "Describe what you designed or built, the problem it solved, and the outcome. Keep it to 1–2 sentences.",
+    tools: ["SolidWorks", "FEA"],
+    images: ["/images/placeholder-1.svg"],
+  },
+  {
+    id: 2,
+    title: "Project Two",
+    description:
+      "Another project description. Highlight your role and any measurable result (weight saved, cost reduced, etc.).",
+    tools: ["AutoCAD", "CNC Machining"],
+    images: ["/images/placeholder-2.svg"],
+  },
+  {
+    id: 3,
+    title: "Project Three",
+    description:
+      "A third project. Replace these with your real work and swap in your own images.",
+    tools: ["Fusion 360", "3D Printing"],
+    images: ["/images/placeholder-3.svg"],
+  },
+]

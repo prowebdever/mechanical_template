@@ -1,0 +1,46 @@
+export default function Reviews({ profile }) {
+  if (!profile.freelancerImage) return null
+
+  return (
+    <section id="reviews" className="border-b border-steel-800/60">
+      <div className="mx-auto max-w-6xl px-6 py-20">
+        <h2 className="text-2xl font-bold tracking-tight md:text-3xl">Verified Reviews</h2>
+        <p className="mt-2 max-w-2xl text-steel-400">
+          Rated <span className="font-semibold text-steel-100">5.0 ★</span> from{' '}
+          <span className="font-semibold text-steel-100">12 client reviews</span> on Freelancer.
+          A snapshot of my verified profile and feedback is below.
+        </p>
+
+        <figure className="mt-10">
+          <a
+            href={profile.freelancer}
+            target="_blank"
+            rel="noreferrer"
+            className="group relative block overflow-hidden rounded-lg border border-steel-800 bg-steel-900 shadow-xl transition hover:border-steel-600"
+          >
+            <img
+              src={profile.freelancerImage}
+              alt="Luke Anthony's verified Freelancer profile and client reviews"
+              loading="lazy"
+              className="mx-auto block w-full max-w-3xl"
+            />
+            <span className="pointer-events-none absolute right-4 top-4 rounded-md bg-steel-950/80 px-3 py-1.5 text-sm font-medium text-steel-100 opacity-0 backdrop-blur transition group-hover:opacity-100">
+              Open profile ↗
+            </span>
+          </a>
+          <figcaption className="mt-4 text-center text-sm text-steel-400">
+            Screenshot of my Freelancer profile —{' '}
+            <a
+              href={profile.freelancer}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-accent hover:underline"
+            >
+              view the live profile
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  )
+}

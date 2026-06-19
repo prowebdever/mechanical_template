@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-steel-50: #f5f7fa;
+  --color-steel-100: #e4e9f0;
+  --color-steel-400: #8a99ad;
+  --color-steel-600: #4a5a70;
+  --color-steel-800: #1f2937;
+  --color-steel-900: #131a26;
+  --color-steel-950: #0b0f17;
+  --color-accent: #f59e0b;
+  --font-display: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-steel-950);
+  color: var(--color-steel-100);
+  font-family: var(--font-display);
+}
+
+/* Subtle blueprint grid backdrop */
+.blueprint-grid {
+  background-image:
+    linear-gradient(rgba(138, 153, 173, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(138, 153, 173, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}

@@ -1,0 +1,57 @@
+import { useState } from 'react'
+
+const links = [
+  { href: '#about', label: 'About' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#reviews', label: 'Reviews' },
+  { href: '#contact', label: 'Contact' },
+]
+
+export default function Navbar({ name }) {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-steel-800/60 bg-steel-950/80 backdrop-blur">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#top" className="flex items-center gap-2 font-semibold tracking-tight">
+          <span className="text-accent">⚙</span>
+          <span>{name}</span>
+        </a>
+
+        <ul className="hidden gap-8 text-sm text-steel-400 md:flex">
+          {links.map((l) => (
+            <li key={l.href}>
+              <a href={l.href} className="transition hover:text-steel-50">
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className="text-steel-400 md:hidden"
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
+        >
+          {open ? '✕' : '☰'}
+        </button>
+      </nav>
+
+      {open && (
+        <ul className="flex flex-col gap-1 border-t border-steel-800/60 px-6 pb-4 text-sm text-steel-400 md:hidden">
+          {links.map((l) => (
+            <li key={l.href}>
+              <a
+                href={l.href}
+                className="block py-2 transition hover:text-steel-50"
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </header>
+  )
+}
