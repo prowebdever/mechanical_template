@@ -22,6 +22,9 @@ export const profile = {
 }
 
 export const skills = [
+  "Mechanical Engineering",
+  "Manufacturing Design",
+  "CFD",
   "AutoCAD",
   "SolidWorks",
   "Fusion 360",
