@@ -6,9 +6,9 @@
 
 export const profile = {
   name: "Luke Anthony",
-  title: "Mechanical Engineer",
-  tagline: "Designing, analyzing, and building reliable mechanical systems.",
-  bio: "Short bio goes here. Mention your specialties (e.g. CAD, FEA, manufacturing), years of experience, and what kind of problems you love to solve.",
+  title: "Mechanical Design Engineer",
+  tagline: "Product Development & Manufacturing Design.",
+  bio: "Mechanical Design Engineer with expertise in CAD modeling, product development, manufacturing design, and engineering simulation. Experienced in creating production-ready designs using SolidWorks, AutoCAD, and Fusion 360, supported by strong knowledge of GD&T, technical drawings, sheet metal design, CNC machining, and additive manufacturing. Skilled in FEA and CFD analysis for validating structural integrity, optimizing performance, and improving product reliability. Passionate about transforming concepts into manufacturable solutions through efficient design, prototyping, and engineering analysis.",
   location: "",
   email: "lukeanthony.work1993@gmail.com",
   phone: "",
@@ -58,6 +58,14 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Heat Sink Steady-State Thermal Analysis",
+    description:
+      "Steady-state thermal FEA of a finned heat sink in ANSYS — modelling convection and heat flux to map the directional heat-flux and temperature distribution across the fins and validate cooling performance.",
+    tools: ["ANSYS", "Thermal FEA", "Simulation"],
+    images: ["/images/heat-sink-thermal-fea.jpg"],
+  },
+  {
+    id: 4,
     title: "Benchtop CNC Milling Machine",
     description:
       "Full 3D assembly of a compact 3-axis CNC milling machine — frame, linear motion stages, spindle mount, and stepper drives designed as an integrated system.",
@@ -65,7 +73,7 @@ export const projects = [
     images: ["/images/cnc-milling-machine.jpg"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Bracket Modelling & Technical Drawing",
     description:
       "Mechanical bracket modelled from specification and detailed into a fully dimensioned 2D engineering drawing with tolerances and GD&T.",
@@ -73,7 +81,7 @@ export const projects = [
     images: ["/images/bracket-drawing.jpg"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Helical Staircase 3D Design",
     description:
       "Spiral staircase designed in 3D with developed plan, elevation, and isometric views — covering geometry, rise/run, and structural layout.",
@@ -81,7 +89,7 @@ export const projects = [
     images: ["/images/helical-staircase.png"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Detailed 3D Building Models",
     description:
       "Highly detailed 3D building models created for printing and visualisation, demonstrating complex surface modelling and fine detail work.",
@@ -89,7 +97,7 @@ export const projects = [
     images: ["/images/architectural-models.png"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Scale Model Boat — Pilar",
     description:
       "Hand-built scale model of the classic fishing boat Pilar — combining design precision with fabrication, finishing, and fine craftsmanship.",
